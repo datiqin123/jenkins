@@ -1,0 +1,12 @@
+spring:
+  redis:
+    host: 120.77.206.207
+    port: 6379
+
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://120.77.206.207:3306/user?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+
