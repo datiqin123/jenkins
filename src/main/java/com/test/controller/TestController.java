@@ -2,6 +2,7 @@ package com.test.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,7 +25,7 @@ public class TestController {
         stringRedisTemplate.opsForValue().set("test","aaa");
     }
 
-    @PostMapping("/testMySql")
+    @GetMapping("/testMySql")
     public void testMySql() {
         User user = new User();
         user.setId("1");
